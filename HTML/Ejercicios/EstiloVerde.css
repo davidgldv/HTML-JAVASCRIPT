@@ -1,0 +1,11 @@
+.david p{
+	font-size: 20pt;
+	color: green;
+}
+.david img{
+	background-color:  blue;
+	height: 600px;
+	width:800px;
+	padding: 5px;
+	margin:  5px;
+	}
