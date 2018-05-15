@@ -18,7 +18,8 @@ function CalcularEtapa()
 				campoResultado.innerHTML = "Adulto";
 				break;
 		case 69:
-				campoResultado.innerHTML = "Jubilado"
+				campoResultado.innerHTML = "Jubilado";
+				break;
 
 	}
 }/*Este ejemplo para el switch no es muy bueno por el tema de los rangos*/
