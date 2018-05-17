@@ -10,7 +10,11 @@
 	margin:  5px;
 	}
 
-#opcion{		
+#Intrucciones{		
+			font-size: 50pt;
+			color: black;
+	}
+#opciones{		
 			font-size: 40pt;
 			background-color: red;
 			color: black;
