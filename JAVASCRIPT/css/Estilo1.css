@@ -1,0 +1,17 @@
+.david p{
+	font-size: 20pt;
+	color: black;
+}
+.david img{
+	background-color:  blue;
+	height: 600px;
+	width:800px;
+	padding: 5px;
+	margin:  5px;
+	}
+
+#opcion{		
+			font-size: 40pt;
+			background-color: red;
+			color: black;
+	}
