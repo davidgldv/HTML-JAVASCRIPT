@@ -9,7 +9,7 @@
   <meta name="description" content="Agenda de contactos">
  
 
-  <link rel="stylesheet" type="text.css" href="css/Estilo1.css" title="Estilo1"> 
+  <link rel="stylesheet" type="text/css" href="css/Estilo1.css" title="Estilo1"> 
   <link rel="icon"  type="images/x-icon" href="iconos/icono.gif"   >
 
   <script type="text/javascript" src="js/ProgramacionOrientadaObjetos.js"></script>
@@ -26,22 +26,25 @@
       2ºElegir la opcion deseada. <br>
   </p>
  
-<p>Elige que contacto quieres cambiar:
-<input type="text" id="Selector"> </p>
-<p>Introduce el nuevo nombre:
-<input type="text" id="NuevoN"> </p>
-<p>Introduce el nuevo telefono:
-<input type="text" id="NuevoT"> </p>
- <p id="opcion"> 
+<p>
+  Elige que contacto quieres cambiar:
+    <input type="text" id="Selector">
+ </p>
+<p>
+  Introduce el nuevo nombre:
+    <input type="text" id="NuevoN"> 
+</p>
+<p>
+   Introduce el nuevo telefono:
+    <input type="text" id="NuevoT"> 
+</p>
+ <p id="opciones"> 
   Elige una opcion: 
   </p>
-  <button onclick="MostrarContactos();">
-  Mostrar contactos
-</button>
+<button onclick="MostrarContactos();">Mostrar contactos</button>
 <button onclick="CambiarContacto();">Cambiar Contacto</button>
 <button onclick="AñadirContacto();">Añadir Contacto</button>
   <p id="Resultado">
-
   </p>
 </div>
 </body>

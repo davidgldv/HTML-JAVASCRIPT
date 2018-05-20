@@ -2,20 +2,15 @@
 	font-size: 20pt;
 	color: black;
 }
-.david img{
-	background-color:  blue;
-	height: 600px;
-	width:800px;
-	padding: 5px;
-	margin:  5px;
-	}
-
-#Intrucciones{		
-			font-size: 50pt;
+.david h1{
+	color: orange;
+}
+#Instrucciones{		
+			font-size: 30pt;
 			color: black;
 	}
 #opciones{		
 			font-size: 40pt;
-			background-color: red;
-			color: black;
+	
+			color: grey;
 	}

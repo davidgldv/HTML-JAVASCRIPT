@@ -24,6 +24,7 @@ class Contacto
         this.telefono = nuevoT;
     }
 }
+ var    c1= new Contacto("List",123456789);
 
 function MostrarContactos() 
 {
@@ -33,25 +34,29 @@ function MostrarContactos()
         c[2] = new Contacto("Luis",645788657);
    
         for(int i = 0 ; i<10 ; i++){
-	           c[i].Escribir();*/
-    }
-    var    c1= new Contacto("List",123456789);
+	           c[i].Escribir();}*/
+    
+   
     c1.Escribir();
 }
 
 function CambiarContacto(){
-            var n,t;
+            var campoN,campoT,n,t;
 
-                n=document.getElementById('nuevoN');
-                t=document.getElementById('nuevoT');
-                
+                campoN=document.getElementById('nuevoN');
+                campoT=document.getElementById('nuevoT');
+                n=campoN.value;
+                t=campot.value;
+
                 c1.Cambiar(n,t);
 }
 function AñadirContacto(){
-            var n,t;
+            var campoN,campoT,n,t;
 
-                n=document.getElementById('nuevoN');
-                t=document.getElementById('nuevoT');
+                campoN=document.getElementById('nuevoN');
+                campoT=document.getElementById('nuevoT');
+                n=campoN.value;
+                t=campot.value;
 
             var c2 = new Contacto(n,t);
 
