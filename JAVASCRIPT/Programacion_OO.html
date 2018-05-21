@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+.
+.
 <html>
 <head>
 	<title>Ejemplo de POO con javascript</title>
@@ -19,31 +21,31 @@
 </head>
 <body>
   <div class="david">
-  <h1 align="center">AGENDA</h1>
-  <p id="Instrucciones">
-  Para introducir o cambiar un contacto debes:<br>
-      1ºIntroducir los datos en las cajas correspondientes.<br>
-      2ºElegir la opcion deseada. <br>
-  </p>
- 
+  <h1 align="center" id="Nombres">AGENDA:<br></h1>
 <p>
   Elige que contacto quieres cambiar:
     <input type="text" id="Selector">
  </p>
 <p>
   Introduce el nuevo nombre:
-    <input type="text" id="NuevoN"> 
+    <input type="text" id="N"> 
 </p>
 <p>
    Introduce el nuevo telefono:
-    <input type="text" id="NuevoT"> 
+    <input type="text" id="T"> 
 </p>
+<p>
+   Introduce la nueva dirección:
+    <input type="text" id="D"> 
+</p>
+
  <p id="opciones"> 
   Elige una opcion: 
   </p>
 <button onclick="MostrarContactos();">Mostrar contactos</button>
 <button onclick="CambiarContacto();">Cambiar Contacto</button>
 <button onclick="AñadirContacto();">Añadir Contacto</button>
+<button onclick="BorrarContacto();"> Borrar Contacto</button>
   <p id="Resultado">
   </p>
 </div>
