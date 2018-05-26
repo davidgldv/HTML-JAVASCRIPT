@@ -12,13 +12,20 @@ class Contacto
 
     Escribir()
     {
-    	var resultado;
-
-    	resultado = document.getElementById('Resultado');
-    	resultado.innerHTML += 
-    	   "Nombre: "   + this.nombre + "<br>" + 
-    	   "Teléfono: " + this.telefono + "<br>"+
+    	
+        var nombres;
+    	
+        nombres = document .getElementById('Nombres') ; 
+        nombres.innerHTML +=  this.nombre + " "; 
+    }
+    EscribirTodo(){
+        var resultado;
+        resultado = document.getElementById('Resultado');
+        resultado.innerHTML = 
+           "Nombre: "   + this.nombre + "<br>" + 
+           "Teléfono: " + this.telefono + "<br>"+
            "Dirección:" + this.direccion + "<br>";
+
     }
 
     Cambiar(nuevoN,nuevoT,nuevaD)
@@ -29,16 +36,18 @@ class Contacto
     }
 }
  var    c = new  Array();
-        c[0] = new Contacto("Maria",123456780,"RioNervion");
+ var    contador = 0;
+       /* c[0] = new Contacto("Maria",123456780,"RioNervion");
         c[1] = new Contacto("Benito",456780124 ,"Portugalete");
         c[2] = new Contacto("David",777888999, "GarciaNoblejas");
         c[3] = new Contacto("Pepe",999888777,"ArturoSoria");
+*/
 
-
-function MostrarContactos() 
-{
-         for(var i = 0 ; i<c.length ; i++){
-	       c[i].Escribir();
+function BuscarContacto() 
+{       var bus=document.getElementById("Buscador").value;
+        var a;
+         for(var i = 0 ; i<contador ; i++){
+             a =c[i].indexOf(bus);
        }
        
 }
@@ -52,7 +61,7 @@ function CambiarContacto(){
             sel=document.getElementById('selector').value;
             c[sel-1].Cambiar(n,t,d);
 
-        for(var i = 0 ; i<c.length ; i++){
+        for(var i = 0 ; i<contador; i++){
            c[i].Escribir();
         }
              
@@ -65,9 +74,19 @@ function AñadirContacto(){
                 t=document.getElementById('T').value;
                 d=document.getElementById('D').value;
 
-                c[4] = new Contacto(n,t,d);
-              for(var i = 0 ; i<c.length ; i++){
+                c[contador] = new Contacto(n,t,d);
+                contador++;
+              for(var i = 0 ; i<contador ; i++){
                     c[i].Escribir();
               }
              
+}
+function BorrarContacto(){
+            if (contador > 0 ){
+            contador--;}
+
+             for(var i = 0 ; i<contador ; i++){
+                    c[i].Escribir();
+              }
+          
 }
