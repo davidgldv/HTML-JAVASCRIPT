@@ -45,9 +45,11 @@ class Contacto
 
 function BuscarContacto() 
 {       var bus=document.getElementById("Buscador").value;
-        var a;
          for(var i = 0 ; i<contador ; i++){
-             a =c[i].indexOf(bus);
+            if (c[i].nombre== bus){
+                c[i].EscribirTodo();
+            }
+            
        }
        
 }
