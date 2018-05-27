@@ -1,16 +1,21 @@
 .david p{
 	font-size: 20pt;
-	color: black;
+	color: white;
 }
 .david h1{
-	color: orange;
+	color: lime;
+	font-size: 40pt;
+
 }
 #Instrucciones{		
-			font-size: 30pt;
+			font-size: 20pt;
 			color: black;
 	}
 #opciones{		
-			font-size: 40pt;
+			font-size: 30pt;
 	
-			color: grey;
+			color: white;
 	}
+body{
+	background-color: navy;
+} 
