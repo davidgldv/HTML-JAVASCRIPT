@@ -3,7 +3,7 @@
 .
 <html>
 <head>
-	<title>Ejemplo de POO con javascript</title>
+	<title>Agenda</title>
 
 	<meta charset="utf-8">
   <meta name="author" content="David">
@@ -14,18 +14,19 @@
   <link rel="stylesheet" type="text/css" href="css/Estilo1.css" title="Estilo1"> 
   <link rel="icon"  type="images/x-icon" href="iconos/icono.gif"   >
 
-  <script type="text/javascript" src="js/ProgramacionOOListaContactos.js"></script>
+  <script type="text/javascript" src="js/ListaContactos.js"></script>
 
  <meta http-equiv="default-style" content="Estilo1">
 
 </head>
 <body>
   <div class="david">
-  <h1 align="center" id="Nombres">AGENDA:<br></h1>
-<p>
-  Elige que contacto quieres cambiar:
-    <input type="text" id="selector">
- </p>
+    <div align="center">
+  <h1 align="center">AGENDA:<br></h1>
+  <p id="Nombres">
+    
+  </p>
+</div>
 <p>
   Introduce el nuevo nombre:
     <input type="text" id="N"> 
@@ -38,17 +39,25 @@
    Introduce la nueva dirección:
     <input type="text" id="D"> 
 </p>
-
+<p>
+  Elige que contacto quieres cambiar:
+    <input type="text" id="Selector">
+ </p>
+ <p>
+  Introduce el nombte del contacto quieres buscar:
+    <input type="text" id="Buscador">
+ </p>
  <p id="opciones"> 
   Elige una opcion: 
   </p>
-<button onclick="MostrarContactos();">Mostrar contactos</button>
-<button onclick="CambiarContacto();">Cambiar Contacto</button>
 <button onclick="AñadirContacto();">Añadir Contacto</button>
+<button onclick="CambiarContacto();">Cambiar Contacto</button>
+<button onclick="BuscarContacto();">Buscar Contacto</button>
 <button onclick="BorrarContacto();"> Borrar Contacto</button>
   <p id="Resultado">
   </p>
 </div>
 </body>
 </html>
+
 
