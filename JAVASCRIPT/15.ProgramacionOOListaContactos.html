@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+.
+.
+<html>
+<head>
+	<title>Ejemplo de POO con javascript</title>
+
+	<meta charset="utf-8">
+  <meta name="author" content="David">
+  <meta name="keyword" content="AGENDA, Contacto" >
+  <meta name="description" content="Agenda de contactos">
+ 
+
+  <link rel="stylesheet" type="text/css" href="css/Estilo1.css" title="Estilo1"> 
+  <link rel="icon"  type="images/x-icon" href="iconos/icono.gif"   >
+
+  <script type="text/javascript" src="js/ProgramacionOOListaContactos.js"></script>
+
+ <meta http-equiv="default-style" content="Estilo1">
+
+</head>
+<body>
+  <div class="david">
+  <h1 align="center" id="Nombres">AGENDA:<br></h1>
+<p>
+  Elige que contacto quieres cambiar:
+    <input type="text" id="selector">
+ </p>
+<p>
+  Introduce el nuevo nombre:
+    <input type="text" id="N"> 
+</p>
+<p>
+   Introduce el nuevo telefono:
+    <input type="text" id="T"> 
+</p>
+<p>
+   Introduce la nueva dirección:
+    <input type="text" id="D"> 
+</p>
+
+ <p id="opciones"> 
+  Elige una opcion: 
+  </p>
+<button onclick="MostrarContactos();">Mostrar contactos</button>
+<button onclick="CambiarContacto();">Cambiar Contacto</button>
+<button onclick="AñadirContacto();">Añadir Contacto</button>
+<button onclick="BorrarContacto();"> Borrar Contacto</button>
+  <p id="Resultado">
+  </p>
+</div>
+</body>
+</html>
+
