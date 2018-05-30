@@ -1,0 +1,21 @@
+.david p{
+	font-size: 10pt;
+	color:red;
+	background-color: blue;
+
+}
+
+#Destacado{
+	font-size: 40pt;
+	color: white;
+	background-color: black;
+}
+.david img{
+		height: 300px;
+		width:400px;
+		margin: 5px;
+		padding: 5px;
+		background-color: black;
+		border: solid grey 3px;
+
+}
